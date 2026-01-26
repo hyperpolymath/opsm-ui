@@ -130,3 +130,35 @@ A capture action that turns web findings into a managed artifact.
 * **consent-aware-http**: consent checks and explicit user intent recording.
 * **palimpsest-license**: licensing policy + display.
 * **rsr-template-repo**: base template and compliance alignment.
+
+== Design System (Initial)
+
+=== Tokens
+
+* **Color tokens:** primary, success, warning, danger, neutral
+* **Spacing:** 4/8/12/16/24/32
+* **Typography:** headline, title, body, mono
+
+=== Components
+
+* App shell (header/sidebar/footer)
+* Mode switcher (global + per‑section)
+* Package card (summary + trust badges)
+* Resolver panel (graph + explanation)
+* Policy editor (rules + toggles)
+* Audit timeline
+
+=== Navigation Skeleton
+
+[source]
+----
+OPSM UI
+├── Home
+├── Store/Search
+├── Workspace
+├── Policies
+├── Audit
+├── History
+└── Settings
+----
+
