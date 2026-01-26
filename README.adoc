@@ -1,12 +1,15 @@
-= RSR template repo - see RSR_OUTLINE.adoc in root for general background and specification
+// SPDX-License-Identifier: PMPL-1.0-or-later
+= OPSM UI
+:toc: preamble
+:toclevels: 2
 
-== This is your repo - don't forget to rename me!
+Cross‑platform UI spec and identity system for OPSM (Tauri + ReScript).
 
-== AI CLI standards
+== Contents
 
-- Include `ai-cli-crash-capture/` and `contractiles/` from this template in new repos.
-- Mirror 6SCM files into `.machine_readable/6scm/`.
-- Before any code generation, check `/var/mnt/eclipse/repos/proven` for the current Idris “unbreakable” library status.
-- If a project uses that Idris library, add an *Idris Inside* badge to the repo.
-- If new bindings are required, add them in `/var/mnt/eclipse/repos/proven` as `idris2-zig-<language>` during the work.
-- If new code suggests additional “unbreakable” Idris modules, add them under `/var/mnt/eclipse/repos/proven` and update binders across all supported languages.
+* link:docs/UI-SPEC.adoc[UI Specification]
+* link:docs/IA.adoc[Information Architecture]
+* link:docs/SETUP-WIZARD.adoc[Setup Wizard]
+* link:docs/DOGFOODING-AUDIT.adoc[Dogfooding Audit]
+* link:docs/INSTALL-MATRIX.adoc[Install Matrix]
+* link:docs/UI-BACKLOG.adoc[UI Backlog]
