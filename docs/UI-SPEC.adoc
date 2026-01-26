@@ -78,6 +78,8 @@ A capture action that turns web findings into a managed artifact.
 * **Primary shell:** Tauri + ReScript (single UI across OSes)
 * **Optional web/admin:** LiveView for light‑weight dashboards
 * **Extension UI:** minimal capture view + history
+* **Local API:** REST on localhost for plan/apply; GraphQL/gRPC planned
+* **Payloads:** Nickel-first authoring, JSON transport supported
 
 == Accessibility
 
@@ -161,4 +163,3 @@ OPSM UI
 ├── History
 └── Settings
 ----
-
