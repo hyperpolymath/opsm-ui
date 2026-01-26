@@ -13,3 +13,11 @@ Cross‑platform UI spec and identity system for OPSM (Tauri + ReScript).
 * link:docs/DOGFOODING-AUDIT.adoc[Dogfooding Audit]
 * link:docs/INSTALL-MATRIX.adoc[Install Matrix]
 * link:docs/UI-BACKLOG.adoc[UI Backlog]
+
+== Dependencies & Standards
+
+This repo follows `rsr-template-repo` conventions and expects integration with:
+
+* `http-capability`
+* `consent-aware-http`
+* `palimpsest-license`

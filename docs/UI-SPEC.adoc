@@ -104,3 +104,29 @@ A capture action that turns web findings into a managed artifact.
 * Show provenance + trust score on package pages
 * Always show rollback plan before apply
 
+
+== Deployment & Port Strategy
+
+* **Admin UI (privileged):** TLS on port **443** with full controls; requires elevated privileges.
+* **Enterprise Software Center (user):** TLS on port **64443** with read access and approved‑only installs.
+* **Users may run dry‑runs** on high port to validate feasibility before requesting approval.
+
+== Protocols
+
+* QUIC + TLS by default.
+* UDP support for approved workflows.
+* Optional protocol add‑ons (RTSP, Gopher, Tor/Onion) gated by policy.
+* SDP‑wrapped transport profiles for negotiated capabilities.
+
+== Security Controls
+
+* Approved‑only install queue for non‑privileged users.
+* Explicit audit trail for approvals.
+* Dry‑run previews show expected install plan, conflicts, and policy violations.
+
+== Required Integrations
+
+* **http-capability**: capability negotiation and negotiated transport profiles.
+* **consent-aware-http**: consent checks and explicit user intent recording.
+* **palimpsest-license**: licensing policy + display.
+* **rsr-template-repo**: base template and compliance alignment.
